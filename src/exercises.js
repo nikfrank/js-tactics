@@ -23,7 +23,7 @@ export const declarer = null;
 
 
 export const stringer = null;
-// this one will pass as long as we send back a string
+// this one will pass as long as we send back a string from a one line fat arrow
 
 
 
