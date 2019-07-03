@@ -365,7 +365,7 @@ answers.isXYinRadius && it('should determine if the point is inside the circle (
 
 
 answers.twoArraysTogether && it('puts two arrays together', ()=>{
-  const testCases = [...Array(10)].map(()=> randomString(10).split(''), randomString(10).split('') );
+  const testCases = [...Array(10)].map(()=> [randomString(10).split(''), randomString(10).split('')] );
 
   const output = testCases.map( t => answers.twoArraysTogether(...t) );
 
