@@ -307,7 +307,7 @@ answers.indexOfGreatest && it('returns the index of the greatest number in the a
 
 
 answers.convertToInt && it('converts an input number to an integer', ()=>{
-  const testCases = [...Array(10)].map(()=> Math.random() * 100 - 50);
+  const testCases = [...Array(10)].map(()=> [...Array(10)].map(()=> Math.random() * 100 - 50)) );
   
   const output = testCases.map( t => answers.convertToInt(t) );
 
