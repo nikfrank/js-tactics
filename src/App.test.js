@@ -344,10 +344,9 @@ answers.isStringIntOrFloat && it('returns a string explaining which kind of numb
                                             (Math.random()*1000)+'');
 
   const output = testCases.map(answers.isStringIntOrFloat);
-
-  output.forEach((o, i)=> expect(o).toEqual( Math.floor(parseInt(testCases[i])) === parseInt(testCases[i]) ? 'int' : 'float' ));
+  
+  output.forEach((o, i)=> expect(o).toEqual( Math.floor(parseInt(testCases[i])) === 1*(testCases[i]) ? 'int' : 'float' ));
 });
-
 
 answers.isXYinRadius && it('should determine if the point is inside the circle (x, y, r)', ()=>{
   const testCases = [...Array(10)].map(()=> [...Array(3)].map(()=> Math.random() * 50 -25));
